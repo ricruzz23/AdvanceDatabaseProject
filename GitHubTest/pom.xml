@@ -21,5 +21,23 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	    <!-- https://mvnrepository.com/artifact/org.wildfly.swarm/javafx -->
+	<dependency>
+	    <groupId>org.wildfly.swarm</groupId>
+	    <artifactId>javafx</artifactId>
+	    <version>2018.5.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.38</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>4.1.6.Final</version>
+	</dependency>
   </dependencies>
 </project>
