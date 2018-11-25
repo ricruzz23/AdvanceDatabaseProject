@@ -1,5 +1,5 @@
 
-package classes;
+package com.advancedb.classes;
 
 import java.sql.Date;
 
