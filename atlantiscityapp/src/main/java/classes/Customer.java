@@ -107,6 +107,7 @@ public class Customer
 	 * Data Members for the class
 	 * ------------------------------------------------------------*/
 	
+	private int intCustomers_CustomerID;
 	private String strCustomerLastName;
 	private String strCustomerFirstName;
 	private Long lngPhoneNumber;

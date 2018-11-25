@@ -116,6 +116,7 @@ public class Shoes {
 	 * Data Members for the class
 	 * ------------------------------------------------------------*/
 	
+	private int intShoes_ShoeID;
 	private char charShoesGender;
 	private double dbShoesShoesize;
 	private char charShoesShoewidth;
