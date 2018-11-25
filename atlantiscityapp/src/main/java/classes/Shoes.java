@@ -1,6 +1,3 @@
-/**
- * 
- */
 package classes;
 
 import java.sql.Date;
@@ -8,9 +5,16 @@ import java.sql.Date;
 /**
  * @author Padmaja
  * @Date 11/25/2018
- *
+ * * 
+ * This classes is used to store the shoe's information coming from the DB.
+ * 
  */
 public class Shoes {
+	
+	/*-------------------------------------------------------------
+	 * Getter and Setter Methods for the Class
+	 * ------------------------------------------------------------*/
+	
 	
 	/**
 	 * @return the charShoesGender
