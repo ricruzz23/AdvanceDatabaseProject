@@ -2,16 +2,13 @@ package com.advancedb.atlantiscityapp;
 
 import java.io.IOException;
 import java.util.Optional;
-
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.ButtonType;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -29,26 +26,27 @@ public class App extends Application
 	public void start(Stage primaryStage) throws Exception 
 	{
 		// TODO Auto-generated method stub
-		primaryStage.setTitle("Hello World!");
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
- 
-            public void handle(ActionEvent event) {
-               try {
-				exitSystem();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-            }
-        });
-        
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-        primaryStage.setScene(new Scene(root, 300, 250));
-        primaryStage.show();
+		try
+		{
+			this.primaryStage = primaryStage;
+			showHomeScene();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 		
+	}
+	
+	public void showHomeScene() throws IOException
+	{
+		// Get the scene from the fxml file
+				FXMLLoader loader = new FXMLLoader(App.class.getResource("../home.fxml"));
+				mainLayout = loader.load();
+				Scene scene = new Scene(mainLayout, 1100, 600);
+				primaryStage.setTitle("Atlantis City Bowling Alley");
+				primaryStage.setScene(scene);
+				primaryStage.show();
 	}
 	
 	public static void exitSystem() throws IOException
@@ -68,4 +66,8 @@ public class App extends Application
 			alert.close();
 		}
 	}	
+	
+	// Private Data Members
+		private Stage primaryStage;
+		private static BorderPane mainLayout;
 }
