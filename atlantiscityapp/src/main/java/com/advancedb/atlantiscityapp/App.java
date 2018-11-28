@@ -41,7 +41,7 @@ public class App extends Application
 	public void showHomeScene() throws IOException
 	{
 		// Get the scene from the fxml file
-				FXMLLoader loader = new FXMLLoader(App.class.getResource("../home.fxml"));
+				FXMLLoader loader = new FXMLLoader(getClass().getResource("../mainview/home.fxml"));
 				mainLayout = loader.load();
 				Scene scene = new Scene(mainLayout, 1100, 600);
 				primaryStage.setTitle("Atlantis City Bowling Alley");

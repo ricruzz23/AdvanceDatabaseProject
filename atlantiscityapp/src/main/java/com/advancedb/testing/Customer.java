@@ -1,4 +1,4 @@
-package com.advancedb.classes;
+package com.advancedb.testing;
 
 import java.sql.Date;
 
