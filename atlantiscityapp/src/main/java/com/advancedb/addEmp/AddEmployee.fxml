@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--@ Roger Cruz
+	@ 11/28/2018
+	@ This file sets ups the Add Customer Screen
+  -->
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+
+<BorderPane fx:controller="com.advancedb.addEmp.AddEmployeeController" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+	
+		<VBox>
+			<HBox>
+				<Label text="First Name:" wrapText="true" />
+				<TextField fx:id="firstName" />
+			</HBox>
+			<HBox>
+				<Label text="Last Name:" wrapText="true" />
+				<TextField fx:id="LastName" />
+			</HBox>
+			<HBox>
+				<Label text="Phone Number:" wrapText="true" />
+				<TextField fx:id="Phone" />
+			</HBox>
+			<HBox>
+				<Label text="E-mail:" wrapText="true" />
+				<TextField fx:id="email" />
+			</HBox>
+		
+		<HBox>
+			
+			<Button text="Add New Customer" minWidth="200" id="Button" onAction="#addEmpToDB" />
+			<Button text="Cancel" minWidth="200" id="Button" onAction="#exitAddEmpScreen" />
+		</HBox>
+		</VBox>
+	</center>
+</BorderPane>
+
+
