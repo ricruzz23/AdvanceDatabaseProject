@@ -1,6 +1,10 @@
-package com.advancedb.testing;
+package com.advancedb.utilClasses;
 
 import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 
 /**
  * @author Roger Cruz
@@ -9,7 +13,7 @@ import java.sql.Date;
  * This classes is used to store the customer's information coming from the DB.
  * 
  * */
-
+@Entity
 public class Customer 
 {
 	
@@ -107,6 +111,7 @@ public class Customer
 	 * Data Members for the class
 	 * ------------------------------------------------------------*/
 	
+	@Id
 	private String strCustomerLastName;
 	private String strCustomerFirstName;
 	private Long lngPhoneNumber;
