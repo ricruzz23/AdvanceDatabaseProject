@@ -22,11 +22,11 @@
 			</HBox>
 			<HBox spacing="5">
 				<Label text="Last Name:" wrapText="true" />
-				<TextField fx:id="LastName" />
+				<TextField fx:id="lastName" />
 			</HBox>
 			<HBox spacing="5">
 				<Label text="Phone Number:" wrapText="true" />
-				<TextField fx:id="Phone" />
+				<TextField fx:id="phone" />
 			</HBox>
 			<HBox spacing="5">
 				<Label text="E-mail:" wrapText="true" />
@@ -35,8 +35,8 @@
 		
 		<HBox>
 			
-			<Button text="Add New Customer" minWidth="200" id="Button" onAction="#addEmpToDB" />
-			<Button text="Cancel" minWidth="200" id="Button" onAction="#exitAddEmpScreen" />
+			<Button text="Add New Customer" minWidth="200" id="Button" onAction="#addCustomerToDB" />
+			<Button text="Cancel" minWidth="200" id="Button" onAction="#exitAddCustomerScreen" />
 		</HBox>
 		</VBox>
 	</center>

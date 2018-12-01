@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
 import org.hibernate.annotations.CreationTimestamp;
 
 
@@ -21,10 +20,6 @@ import org.hibernate.annotations.CreationTimestamp;
 @Entity
 public class Customers 
 {
-	
-	
-	
-	
 	/*-------------------------------------------------------------
 	 * Data Members for the class
 	 * ------------------------------------------------------------*/
@@ -56,14 +51,14 @@ public class Customers
 	/**
 	 * @return the customers_phoneNumber
 	 */
-	public int getCustomers_phoneNumber() {
+	public long getCustomers_phoneNumber() {
 		return customers_phoneNumber;
 	}
 	/**
-	 * @param i the customers_phoneNumber to set
+	 * @param long1 the customers_phoneNumber to set
 	 */
-	public void setCustomers_phoneNumber(int i) {
-		this.customers_phoneNumber = i;
+	public void setCustomers_phoneNumber(long long1) {
+		this.customers_phoneNumber = long1;
 	}
 	/**
 	 * @return the customers_Email
@@ -113,10 +108,12 @@ public class Customers
 	public void setCustomers_deactiveDate(Date customers_deactiveDate) {
 		this.customers_deactiveDate = customers_deactiveDate;
 	}
+	
+	
 	@Id
 	private String customers_lastName;
 	private String customer_firstName;
-	private int customers_phoneNumber;
+	private long customers_phoneNumber;
 	private String customers_Email;
 	@CreationTimestamp
 	@Temporal(TemporalType.TIMESTAMP)
