@@ -1,11 +1,17 @@
 package com.advancedb.addCustomer;
 
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.advancedb.utilClasses.Customer;
+import com.advancedb.utilClasses.Customers;
 
 /**
  * @author Roger Cruz
@@ -35,11 +41,15 @@ public class AddCustomerController {
 	@FXML
 	protected void addEmpToDB(ActionEvent event) {
 		
-		Customer cust = new Customer();
-		cust.setStrCustomerLastName("");
-		cust.setStrCustomerLastName("");
 		
-		Configuration con = new Configuration().configure().addAnnotatedClass(Customer.class);
+		
+		Customers cust = new Customers();
+		cust.setCustomers_lastName("Cruz");
+		cust.setCustomer_firstName("Roger");
+		cust.setCustomers_phoneNumber(1234567788);
+		cust.setCustomers_Email("roger@gmail.com");
+		
+		Configuration con = new Configuration().configure().addAnnotatedClass(Customers.class);
 		
 		SessionFactory sf = con.buildSessionFactory();
 		

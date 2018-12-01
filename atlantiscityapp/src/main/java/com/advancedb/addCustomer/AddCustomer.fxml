@@ -15,20 +15,20 @@
 <BorderPane fx:controller="com.advancedb.addCustomer.AddCustomerController" xmlns:fx="http://javafx.com/fxml/1">
 	<center>
 	
-		<VBox>
-			<HBox>
+		<VBox spacing="10">
+			<HBox spacing="5">
 				<Label text="First Name:" wrapText="true" />
 				<TextField fx:id="firstName" />
 			</HBox>
-			<HBox>
+			<HBox spacing="5">
 				<Label text="Last Name:" wrapText="true" />
 				<TextField fx:id="LastName" />
 			</HBox>
-			<HBox>
+			<HBox spacing="5">
 				<Label text="Phone Number:" wrapText="true" />
 				<TextField fx:id="Phone" />
 			</HBox>
-			<HBox>
+			<HBox spacing="5">
 				<Label text="E-mail:" wrapText="true" />
 				<TextField fx:id="email" />
 			</HBox>
