@@ -12,7 +12,7 @@
 
 <?import javafx.scene.control.Label?>
 
-<BorderPane fx:controller="com.advancedb.addEmp.AddCustomerController" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="com.advancedb.addCustomer.AddCustomerController" xmlns:fx="http://javafx.com/fxml/1">
 	<center>
 	
 		<VBox>

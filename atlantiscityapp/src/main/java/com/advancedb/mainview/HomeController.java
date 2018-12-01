@@ -27,7 +27,7 @@ public class HomeController {
 		try
 		{				
 			// Get the scene from the fxml file
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("../addEmp/AddEmployee.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../addCustomer/AddCustomer.fxml"));
 			BorderPane updateJobPane = (BorderPane)loader.load();
 			Scene scene = new Scene(updateJobPane);
 			Stage stage = new Stage();
