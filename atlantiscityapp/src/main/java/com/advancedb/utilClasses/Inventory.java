@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.advancedb.utilClasses;
 
 import java.sql.Date;
@@ -10,12 +8,12 @@ import java.sql.Date;
  * @Date 11/25/2018
  *
  */
-public class Shoes {
+public class Inventory {
 	
 	/**
 	 * @return the charShoesGender
 	 */
-	public char getCharShoesGender() {
+	public String getCharShoesGender() {
 		return charShoesGender;
 	}
 
@@ -23,7 +21,7 @@ public class Shoes {
 	/**
 	 * @param charShoesGender the charShoesGender to set
 	 */
-	public void setCharShoesGender(char charShoesGender) {
+	public void setCharShoesGender(String charShoesGender) {
 		this.charShoesGender = charShoesGender;
 	}
 
@@ -31,7 +29,7 @@ public class Shoes {
 	/**
 	 * @return the dbShoesShoesize
 	 */
-	public double getDbShoesShoesize() {
+	public String getDbShoesShoesize() {
 		return dbShoesShoesize;
 	}
 
@@ -39,7 +37,7 @@ public class Shoes {
 	/**
 	 * @param dbShoesShoesize the dbShoesShoesize to set
 	 */
-	public void setDbShoesShoesize(double dbShoesShoesize) {
+	public void setDbShoesShoesize(String dbShoesShoesize) {
 		this.dbShoesShoesize = dbShoesShoesize;
 	}
 
@@ -47,7 +45,7 @@ public class Shoes {
 	/**
 	 * @return the charShoesShoewidth
 	 */
-	public char getCharShoesShoewidth() {
+	public String getCharShoesShoewidth() {
 		return charShoesShoewidth;
 	}
 
@@ -55,7 +53,7 @@ public class Shoes {
 	/**
 	 * @param charShoesShoewidth the charShoesShoewidth to set
 	 */
-	public void setCharShoesShoewidth(char charShoesShoewidth) {
+	public void setCharShoesShoewidth(String charShoesShoewidth) {
 		this.charShoesShoewidth = charShoesShoewidth;
 	}
 
@@ -63,7 +61,7 @@ public class Shoes {
 	/**
 	 * @return the charShoesAgegroup
 	 */
-	public char getCharShoesAgegroup() {
+	public String getCharShoesAgegroup() {
 		return charShoesAgegroup;
 	}
 
@@ -71,7 +69,7 @@ public class Shoes {
 	/**
 	 * @param charShoesAgegroup the charShoesAgegroup to set
 	 */
-	public void setCharShoesAgegroup(char charShoesAgegroup) {
+	public void setCharShoesAgegroup(String charShoesAgegroup) {
 		this.charShoesAgegroup = charShoesAgegroup;
 	}
 
@@ -112,10 +110,10 @@ public class Shoes {
 	 * Data Members for the class
 	 * ------------------------------------------------------------*/
 	
-	private char charShoesGender;
-	private double dbShoesShoesize;
-	private char charShoesShoewidth;
-	private char charShoesAgegroup;
+	private String charShoesGender;
+	private String dbShoesShoesize;
+	private String charShoesShoewidth;
+	private String charShoesAgegroup;
 	private boolean boolShoesIscheckedout;
 	private boolean boolShoesRetireshoe;
 }
