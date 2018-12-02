@@ -1,14 +1,26 @@
 package com.advancedb.manageCustomer;
 
+/**
+ * @author Roger Cruz
+ * 12/2/2018
+ * 
+ * This class will control the Manage Customer Screen.
+ * 
+ * */
 import javafx.fxml.FXML;
-
 import javafx.scene.control.TextField;
-
 import java.sql.SQLException;
+import java.util.ArrayList;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-
 import javafx.scene.control.TableView;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import com.advancedb.utilClasses.Customers;
 
 public class manageCustomerController {
 	@FXML
@@ -21,6 +33,28 @@ public class manageCustomerController {
 	public void initialize() throws ClassNotFoundException, SQLException
 	{
 		
+	}
+	
+	public void loadAllCustomers()
+	{
+		Customers cust = new Customers();
+		
+		Configuration con = new Configuration().configure().addAnnotatedClass(Customers.class);
+		
+		SessionFactory sf = con.buildSessionFactory();
+		
+		Session session = sf.openSession();
+		
+		Transaction tx = session.beginTransaction();
+		
+		ObservableList<Customers> observList = (ObservableList<Customers>) new ArrayList();
+		
+		//observList = session.get
+		
+		
+		tx.commit();
+		
+		//customerAdded(event);
 	}
 	
 	// Event Listener on Button.onAction
