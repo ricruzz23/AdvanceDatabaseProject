@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 
 import javafx.scene.control.TextField;
 
+import java.sql.SQLException;
+
 import javafx.event.ActionEvent;
 
 import javafx.scene.control.TableView;
@@ -14,6 +16,13 @@ public class manageCustomerController {
 	@FXML
 	private TableView tableView;
 
+	
+	@FXML
+	public void initialize() throws ClassNotFoundException, SQLException
+	{
+		
+	}
+	
 	// Event Listener on Button.onAction
 	@FXML
 	public void updateCustomer(ActionEvent event) {

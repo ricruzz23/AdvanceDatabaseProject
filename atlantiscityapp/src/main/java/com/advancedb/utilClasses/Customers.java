@@ -17,7 +17,7 @@ import org.hibernate.annotations.CreationTimestamp;
  * This classes is used to store the customer's information coming from the DB.
  * 
  * */
-@Entity
+@Entity(name="customers")
 public class Customers 
 {
 	/*-------------------------------------------------------------
@@ -111,15 +111,21 @@ public class Customers
 	
 	
 	@Id
+	@Column(name="customers_lastName")
 	private String customers_lastName;
+	@Column(name="customer_firstName")
 	private String customer_firstName;
+	@Column(name="customers_phoneNumber")
 	private long customers_phoneNumber;
+	@Column(name="customers_Email")
 	private String customers_Email;
 	@CreationTimestamp
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "customers_registrationDate")
 	private Date customers_registrationDate;
+	@Column(name="customers_deactive")
 	private boolean customers_deactive;
+	@Column(name="customers_deactiveDate")
 	private Date customers_deactiveDate;
 	
 	
