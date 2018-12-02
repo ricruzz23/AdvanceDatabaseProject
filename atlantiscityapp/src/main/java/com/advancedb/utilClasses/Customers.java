@@ -111,6 +111,8 @@ public class Customers
 	
 	
 	@Id
+	@Column(name="customers_customerID")
+	private int customers_customerID;
 	@Column(name="customers_lastName")
 	private String customers_lastName;
 	@Column(name="customer_firstName")
