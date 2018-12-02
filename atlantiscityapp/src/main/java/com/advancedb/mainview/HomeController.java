@@ -22,7 +22,7 @@ import javafx.stage.Stage;
 
 public class HomeController {
 
-	@FXML protected void goToMainScene() throws IOException
+	@FXML protected void goToAddCustomerScene() throws IOException
 	{	
 		try
 		{				
@@ -31,7 +31,7 @@ public class HomeController {
 			BorderPane updateJobPane = (BorderPane)loader.load();
 			Scene scene = new Scene(updateJobPane);
 			Stage stage = new Stage();
-			stage.setTitle("Update Job");
+			stage.setTitle("Add Customer");
 			stage.setScene(scene);
 			stage.show();
 		}
@@ -41,10 +41,31 @@ public class HomeController {
 		}
 	}
 	
+	@FXML protected void goToManageCustomerScene() throws IOException
+	{	
+		try
+		{				
+			// Get the scene from the fxml file
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../manageCustomer/manageCustomer.fxml"));
+			BorderPane updateJobPane = (BorderPane)loader.load();
+			Scene scene = new Scene(updateJobPane);
+			Stage stage = new Stage();
+			stage.setTitle("Manage Customers");
+			stage.setScene(scene);
+			stage.show();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
 	@FXML protected void exitSystem() throws IOException
 	{
 		Alert alert = new Alert(AlertType.CONFIRMATION);
-		alert.setTitle("Exiting FloJo-Aide");
+		alert.setTitle("Exiting Atlantis City Bowling");
 		alert.setHeaderText(null);
 		alert.setContentText("Are you sure you want to exit?");
 

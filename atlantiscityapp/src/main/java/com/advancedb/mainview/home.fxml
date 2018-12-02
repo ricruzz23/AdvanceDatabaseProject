@@ -23,8 +23,8 @@
 						<Insets bottom="20" left="20" top="20" right="20" />
 				</padding>
 				<VBox spacing="20">
-					<Button text="Add New Customer" minWidth="200" id="Button" onAction="#goToMainScene" />
-					<Button text="Manage Customers" minWidth="200" id="Button" />
+					<Button text="Add New Customer" minWidth="200" id="Button" onAction="#goToAddCustomerScene" />
+					<Button text="Manage Customers" minWidth="200" id="Button" onAction="#goToManageCustomerScene" />
 				</VBox>
 				<Separator orientation="VERTICAL" />
 				<VBox spacing="20">
