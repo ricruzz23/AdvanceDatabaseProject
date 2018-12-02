@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--@ Padmaja Parise
+	@ 12/01/2018
+	@ This file sets ups the Add Inventory Screen
+  -->
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane fx:controller="com.advancedb.addInventory.AddInventoryController" xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+		<Insets bottom="20" left="20" top="20" right="20" />
+	</padding>
+	<center>
+		<VBox spacing="25">
+			<HBox spacing="10">
+				<VBox spacing="10">
+					<Label text="Gender:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Shoe Width:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Shoe size:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Age Group:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+				</VBox>
+				<VBox spacing="10">
+					<TextField fx:id="gender" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="shoewidth" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="shoesize" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="agegroup" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+				</VBox>
+			</HBox>
+			<HBox spacing="10">
+				<Button text="Add New Shoes" minWidth="200" id="Button" onAction="#addInventoryToDB" />
+				<Button text="Cancel" minWidth="200" id="Button" onAction="#exitAddInventoryScreen" />
+			</HBox>
+		</VBox>
+	</center>
+</BorderPane>
+

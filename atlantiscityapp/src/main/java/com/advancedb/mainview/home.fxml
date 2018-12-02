@@ -33,7 +33,7 @@
 				</VBox>
 				<Separator orientation="VERTICAL" />
 				<VBox spacing="20">
-					<Button text="Add Shoe To Inventory" minWidth="200"/>
+					<Button text="Add Shoe To Inventory" minWidth="200" id="Button" onAction="#goToAddInventoryScene"/>
 					<Button text="Manage Shoes" minWidth="200" id="Button" />
 				</VBox>
 			</HBox>
