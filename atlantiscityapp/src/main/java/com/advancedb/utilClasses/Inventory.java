@@ -8,6 +8,7 @@ import java.sql.Date;
  * @Date 11/25/2018
  *
  */
+
 public class Inventory {
 	
 	/**
