@@ -2,6 +2,7 @@
 
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -14,11 +15,15 @@
 
 <BorderPane  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.advancedb.manageCustomer.manageCustomerController">
 	<!-- TODO Add Nodes -->
+	<padding>
+		<Insets bottom="20" left="20" top="20" right="20" />
+	</padding>
 	<center>
 		<VBox spacing="15">
-		<HBox >
+		<HBox spacing="10">
 			<Label>Search By Phone Number:</Label>
 			<TextField fx:id="phone" />
+			<Button text="Search" minWidth="200" id="Button"  />
 		</HBox>
 		<Separator orientation="HORIZONTAL"></Separator>
 		<TableView fx:id="tableView" VBox.vgrow="ALWAYS">
@@ -61,7 +66,7 @@
 				<FXCollections fx:factory="observableArrayList"></FXCollections>
 			</items>
 		</TableView>
-		<HBox >
+		<HBox spacing="20" alignment="CENTER">
 			<Button text="Update Customer" minWidth="200" id="Button" onAction="#updateCustomer" />
 			<Button text="Deactivate Customer" minWidth="200" id="Button" onAction="#deactivateCustomer" />
 		</HBox>

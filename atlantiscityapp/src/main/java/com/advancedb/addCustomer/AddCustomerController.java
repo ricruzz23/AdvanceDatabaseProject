@@ -43,7 +43,7 @@ public class AddCustomerController {
 		cust.setCustomers_lastName(lastName.getText());
 		cust.setCustomer_firstName(firstName.getText());
 		cust.setCustomers_phoneNumber(Long.valueOf(phone.getText()));
-		cust.setCustomers_Email("roger@gmail.com");
+		cust.setCustomers_Email(email.getText());
 		
 		Configuration con = new Configuration().configure().addAnnotatedClass(Customers.class);
 		
