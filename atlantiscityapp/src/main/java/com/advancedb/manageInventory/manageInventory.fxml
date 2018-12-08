@@ -74,7 +74,7 @@
 		</TableView>
 		<HBox spacing="20" alignment="CENTER">
 			<Button text="Update Inventory" minWidth="200" id="Button" onAction="#updateInventory" />
-			<Button text="Retire Shoe from Inventory" minWidth="200" id="Button" onAction="#retireInventory" />
+			<Button text="Retire Shoe from Inventory" minWidth="200" id="Button" onAction="#retireInventory" /> 
 		</HBox>
 	</VBox>
 	</center>
