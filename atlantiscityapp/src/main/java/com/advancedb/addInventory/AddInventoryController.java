@@ -15,9 +15,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import com.advancedb.utilClasses.Customers;
 import com.advancedb.utilClasses.Inventory;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -42,12 +40,10 @@ public class AddInventoryController {
 	protected void addInventoryToDB(ActionEvent event) {
 		
 		Inventory shoe = new Inventory();
-		shoe.setCharShoesGender(gender.getText());
-		shoe.setCharShoesShoewidth(shoewidth.getText());
-		shoe.setDbShoesShoesize(shoesize.getText());
-		shoe.setCharShoesAgegroup(agegroup.getText());
-
-		
+		shoe.setshoes_shoesgender(gender.getText());
+		shoe.setshoes_shoeWidth(shoewidth.getText());
+		shoe.setshoes_shoeSize(shoesize.getText());
+		shoe.setshoes_ageGroup(agegroup.getText());		
 		
 		Configuration con = new Configuration().configure().addAnnotatedClass(Inventory.class);
 		
