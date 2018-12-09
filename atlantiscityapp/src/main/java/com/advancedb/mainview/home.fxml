@@ -28,8 +28,7 @@
 				</VBox>
 				<Separator orientation="VERTICAL" />
 				<VBox spacing="20">
-					<Button text="Shoes Check-In \ Check-Out" minWidth="200"/>
-				
+					<Button text="Shoes Check-In \ Check-Out" minWidth="200" onAction="#goToCheckInCheckOutScene"/>
 				</VBox>
 				<Separator orientation="VERTICAL" />
 				<VBox spacing="20">
