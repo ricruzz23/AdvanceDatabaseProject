@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
 
@@ -231,7 +233,7 @@ public class Customers
 	@Column(name = "customers_registrationDate")
 	private LocalDate customers_registrationDate;
 	@Column(name="customers_deactive")
-	private Integer customers_deactive;
+	private Integer customers_deactive = 0;
 	@Column(name="customers_deactiveDate")
 	private LocalDate customers_deactiveDate;
 	
