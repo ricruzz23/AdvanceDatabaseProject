@@ -9,11 +9,11 @@
 <?import javafx.scene.control.Label?>
 
 <!--@ Roger Cruz
-	@ 11/28/2018
-	@ This file sets ups the Add Customer Screen
+	@ 12/9/2018
+	@ This file sets up the Customer Update Screen
   -->
 
-<BorderPane fx:controller="com.advancedb.addCustomer.AddCustomerController" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="com.advancedb.updateCustomer.UpdateCustomerController" xmlns:fx="http://javafx.com/fxml/1">
 	<padding>
 		<Insets bottom="20" left="20" top="20" right="20" />
 	</padding>
@@ -21,12 +21,14 @@
 		<VBox spacing="25">
 			<HBox spacing="10">
 				<VBox spacing="10">
+					<Label text="ID:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
 					<Label text="First Name:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
 					<Label text="Last Name:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
 					<Label text="Phone Number:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
 					<Label text="E-mail:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
 				</VBox>
 				<VBox spacing="10">
+					<TextField fx:id="custID" minWidth="200" minHeight="30" alignment="CENTER_LEFT" disable="true"/>
 					<TextField fx:id="firstName" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
 					<TextField fx:id="lastName" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
 					<TextField fx:id="phone" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
@@ -34,11 +36,9 @@
 				</VBox>
 			</HBox>
 			<HBox spacing="10">
-				<Button text="Add New Customer" minWidth="200" id="Button" onAction="#addCustomerToDB" />
-				<Button text="Cancel" minWidth="200" id="Button" onAction="#exitAddCustomerScreen" />
+				<Button text="Update Customer" minWidth="200" id="Button" onAction="#UpdateCustomerToDB" />
+				<Button text="Cancel" minWidth="200" id="Button" onAction="#exitUpdateCustomerScreen" />
 			</HBox>
 		</VBox>
 	</center>
 </BorderPane>
-
-
