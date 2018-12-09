@@ -76,6 +76,25 @@ public class HomeController
 		}
 	}
 	
+	@FXML protected void goToManageInventoryScene() throws IOException
+	{	
+		try
+		{				
+			// Get the scene from the fxml file
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../manageInventory/manageInventory.fxml"));
+			BorderPane updateJobPane = (BorderPane)loader.load();
+			Scene scene = new Scene(updateJobPane);
+			Stage stage = new Stage();
+			stage.setTitle("Manage Inventory");
+			stage.setScene(scene);
+			stage.show();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
 	@FXML protected void exitSystem() throws IOException
 	{
 		Alert alert = new Alert(AlertType.CONFIRMATION);
