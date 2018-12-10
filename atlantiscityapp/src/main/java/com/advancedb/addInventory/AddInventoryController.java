@@ -26,14 +26,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
 public class AddInventoryController {
-	@FXML
-	private TextField gender;
-	@FXML
-	private TextField shoewidth;
-	@FXML
-	private TextField shoesize;
-	@FXML
-	private TextField agegroup;
+	
 
 	// Event Listener on Button.onAction
 	@FXML
@@ -90,4 +83,15 @@ public class AddInventoryController {
 	}
 	
 	
+	/*-------------------------------------------------------------
+	 * Data Members for the class
+	 * ------------------------------------------------------------*/
+	@FXML
+	private TextField gender;
+	@FXML
+	private TextField shoewidth;
+	@FXML
+	private TextField shoesize;
+	@FXML
+	private TextField agegroup;
 }

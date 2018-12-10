@@ -24,19 +24,6 @@ public class Inventory {
 	 * Data Members for the class
 	 * ------------------------------------------------------------*/	
 	
-	/**
-	 * @return the shoes_shoeID
-	 */
-	public Integer getshoes_shoeID() {
-		return shoes_shoeID;
-	}
-	/**
-	 * @param shoes_shoeID the shoes_shoeID to set
-	 */
-	public void setshoes_shoeID(Integer shoes_shoeID) {
-		this.shoes_shoeID = shoes_shoeID;
-	}
-	
 	
 	/**
 	 * @return the shoes_shoesgender
@@ -105,7 +92,7 @@ public class Inventory {
 	/**
 	 * @return the shoes_isCheckedOut
 	 */
-	public int getisshoes_isCheckedOut() {
+	public boolean isshoes_isCheckedOut() {
 		return shoes_isCheckedOut;
 	}
 
@@ -113,7 +100,7 @@ public class Inventory {
 	/**
 	 * @param shoes_isCheckedOut the shoes_isCheckedOut to set
 	 */
-	public void setshoes_isCheckedOut(int shoes_isCheckedOut) {
+	public void setshoes_isCheckedOut(boolean shoes_isCheckedOut) {
 		this.shoes_isCheckedOut = shoes_isCheckedOut;
 	}
 
@@ -121,21 +108,21 @@ public class Inventory {
 	/**
 	 * @return the shoes_retireShoe
 	 */
-	public int getshoes_retireShoe() {
+	public boolean isshoes_retireShoe() {
 		return shoes_retireShoe;
 	}
 
 
 	/**
-	 * @param i the shoes_retireShoe to set
+	 * @param shoes_retireShoe the shoes_retireShoe to set
 	 */
-	public void setshoes_retireShoe(int i) {
-		this.shoes_retireShoe = i;
+	public void setshoes_retireShoe(boolean shoes_retireShoe) {
+		this.shoes_retireShoe = shoes_retireShoe;
 	}
 
 	@Id
 	@Column(name="shoes_shoeID")
-	private int shoes_shoeID;
+	private int customers_customerID;
 	
 	@Column(name="shoes_gender")	
 	private String shoes_shoesgender;
@@ -150,10 +137,10 @@ public class Inventory {
 	private String shoes_ageGroup;
 	
 	@Column(name="shoes_isCheckedOut")	
-	private int shoes_isCheckedOut;
+	private boolean shoes_isCheckedOut;
 	
 	@Column(name="shoes_retireShoe")
-	private int shoes_retireShoe;
+	private boolean shoes_retireShoe;
 	
 	public void throwException() throws Exception {
         throw new Exception("Uh oh, this is an Exception message!");
