@@ -44,9 +44,9 @@
 				<Separator orientation="VERTICAL"></Separator>
 				
 				<VBox spacing="10">
-					<Label>Search By Phone Number:</Label>
-					<TextField fx:id="searchPhone" />
-					<Button text="Search" minWidth="200" id="Button"  />
+					<Label>Search by Customer ID:</Label>
+					<TextField fx:id="searchCustID" />
+					<Button text="Search" minWidth="200" id="Button"  onAction="#searchCustomer"/>
 				</VBox>
 			</HBox>
 			
