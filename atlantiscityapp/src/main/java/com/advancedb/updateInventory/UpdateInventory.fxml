@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+/**
+ * @author Padmaja
+ * @Date 12/8/2018
+ * @ This file sets up the Inventory Update Screen
+*/
+
+<BorderPane fx:controller="com.advancedb.updateInventory.UpdateInventoryController" xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+		<Insets bottom="20" left="20" top="20" right="20" />
+	</padding>
+	<center>
+		<VBox spacing="25">
+			<HBox spacing="10">
+				<VBox spacing="10">
+					<Label text="ID:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Gender:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Shoe Size:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Shoe Width:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Age Group:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+					<Label text="Is Checked Out:" wrapText="true" minWidth="200" minHeight="30" alignment="CENTER_RIGHT"/>
+				</VBox>
+				<VBox spacing="10">
+					<TextField fx:id="shoeID" minWidth="200" minHeight="30" alignment="CENTER_LEFT" disable="true"/>
+					<TextField fx:id="gender" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="shoeSize" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="shoeWidth" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="ageGroup" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+					<TextField fx:id="isCheckedOut" minWidth="200" minHeight="30" alignment="CENTER_LEFT"/>
+				</VBox>
+			</HBox>
+			<HBox spacing="10">
+				<Button text="Update Inventory" minWidth="200" id="Button" onAction="#UpdateInventoryToDB" />
+				<Button text="Cancel" minWidth="200" id="Button" onAction="#exitUpdateInventoryScreen" />
+			</HBox>
+		</VBox>
+	</center>
+</BorderPane>

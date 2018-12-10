@@ -238,6 +238,8 @@ public class Customers
 	private LocalDate customers_deactiveDate;
 	
 	
-	
+	public void throwException() throws Exception {
+        throw new Exception("Uh oh, this is an Exception message!");
+    }
 	
 }
